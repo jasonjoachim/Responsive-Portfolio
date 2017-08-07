@@ -120,6 +120,15 @@ footer {
   background: #fff;
   border: 1px solid #ddd;
 }
+.portfolio-sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
 
 h3,
 .sidebar h2 {
@@ -163,11 +172,20 @@ h3,
   float: left;
   width: 274px;
   margin: 20px 0 25px;
-  overflow: inherit;}
+  overflow: auto;
 }
 
 .work:nth-child(even) {
   margin-right: 40px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
 .work img {
@@ -261,34 +279,50 @@ nav {
 
 }
 @media only screen and (max-width: 768px) and (min-width: 641px){
-  #logo {
-  float: left;}
-  nav {
-  float: right;}
-  .main-section {
+ 
+   /* .main-section {
   margin: 0 0 40px 8%;
   float: none;
-  width: 100%;}
-  .main-section img {
-  width: 50%}
+  width: 100%;
+  height: 78%;}
   .sidebar {
   position: static;
   margin: 0 0 20px 8%;
   float: none;
   width: 100%;
-  max-width: 650px;}
-  /* portfolio page */
-  .work {
-  width: 50%}
+  max-width: 650px;} */
 
-  .work img {
-  width: 50%;
-  border: 0 none;
-  opacity: 0.8;}
-  .sidebar {
+   /*portfolio page*/
+
+  /* .work h3 {
+     max-width: 50%;
+     height: 20px;}
+
+  .portfolio-sidebar {
+    float: none;
+    position: static;
     width: 100%;
-    clear: all;
+  } 
+}  */
+
+@media only screen and (max-width: 640px) {
+
+  .masthead {
+    position: static;}
+
+  .main-section {
+  margin: 0 0 40px 8%;
+  float: none;
+  width: 100%;}
+
+  .main-section img {
+  width: 100%}
+
+    .sidebar {
+  position: static;
+  margin: 0 0 20px 8%;
+  float: none;
+  width: 100%;
+  max-width: 640px;
   }
 }
-
-@media only screen and (max-width: 640px) {}
